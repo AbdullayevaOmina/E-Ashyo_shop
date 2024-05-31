@@ -1,8 +1,7 @@
 import { request } from "../config";
-import { Request } from "@interface";
-export const auth:Request={
-    signin: (data)=> request.post("/login",data),
-    signup: (data)=> request.post("/signup",data),
-    signout: ()=> request.post("/signout"),
-    reset: (data)=> request.post("/reset", data),
-}
+import { Request } from "@auth-interface";
+export const auth: Request = {
+  signin: (data) => request.post("/admin/login", data),
+  signup: (data) => request.post("/admin/create", data),
+  logout: () => request.post("/admin/logout"),
+};

@@ -7,35 +7,10 @@ import {
   CustomSVG6,
   SmallUSFlagIcon,
 } from "@drawer-icons";
-import { DarkThemeToggle } from "flowbite-react";
-import { useEffect, useState } from "react";
+// import router from "@routes";
+import { DarkModeButton } from "@dark-mode";
 
 export default function Saidebar() {
-  // ================== Dark & Light Mode ===================
-  const [darkMode, setDarkMode] = useState<boolean>(() => {
-    const savedMode = localStorage.getItem("darkMode");
-    return savedMode === "true";
-  });
-
-  const toggleDarkMode = () => {
-    setDarkMode((prevMode) => {
-      const newMode = !prevMode;
-      localStorage.setItem("darkMode", newMode.toString());
-      return newMode;
-    });
-  };
-
-  useEffect(() => {
-    if (!darkMode) {
-      document.documentElement.classList.add("dark");
-      document.body.classList.add("bg-gray-900", "text-white");
-    } else {
-      document.documentElement.classList.remove("dark");
-      document.body.classList.remove("bg-gray-900", "text-white");
-    }
-  }, [darkMode]);
-  // ================== Dark & Light Mode ===================
-
   return (
     <>
       <aside
@@ -369,9 +344,7 @@ export default function Saidebar() {
             {CustomSVG}
           </button>
 
-          <button onClick={toggleDarkMode}>
-            <DarkThemeToggle />
-          </button>
+          <DarkModeButton />
           {/* <!-- Dropdown --> */}
           <div
             className="hidden z-50 my-4 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700"

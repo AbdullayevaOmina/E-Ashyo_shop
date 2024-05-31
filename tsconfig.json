@@ -9,7 +9,6 @@
       "@/*": ["./*"],
 
       "@types": ["./src/types"],
-      "@global-interface": ["./src/interfaces/global.ts"],
       "@enums": ["./src/types/enums"],
 
       "@utils": ["./src/utils"],
@@ -24,12 +23,27 @@
       "@pages": ["./src/pages"],
       "@router": ["./src/router"],
       "@routes": ["./src/router/routes.tsx"],
-      "@services": ["./src/services"],
       "@context": ["./src/context"],
+
+      "@service": ["./src/service/index.ts"],
+      "@coocie": ["./src/utils/token-service.ts"],
 
       // --------------------- icons -----------------------
       "@drawer-icons": ["./src/assets/icons/drawer-icons.tsx"],
-      "@global-icons": ["./src/assets/icons/global-icons.tsx"]
+      "@global-icons": ["./src/assets/icons/global-icons.tsx"],
+
+      // --------------------------------------------------------
+      "@dark-mode": ["./src/utils/dark-mode.tsx"],
+
+      // --------------------- interface -----------------------
+      "@global-interface": ["./src/interfaces/global.ts"],
+      "@auth-interface": ["./src/interfaces//auth/register.ts"],
+
+      // --------------------------------------------------------
+      "@validations": ["./src/validations"],
+
+      // --------------------------------------------------------
+      "@store": ["./src/store/index.ts"]
     },
     /* Bundler mode */
     "moduleResolution": "bundler",

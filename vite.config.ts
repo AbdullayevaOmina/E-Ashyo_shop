@@ -8,26 +8,28 @@ export default defineConfig({
     alias: [
       { find: "@", replacement: "/src/*" },
       { find: "@components", replacement: "/src/components" },
-      { find: "@containers", replacement: "/src/components/containers" },
       { find: "@ui", replacement: "/src/components/ui" },
-      { find: "@form-ui", replacement: "/src/components/ui/form" },
-      { find: "@images", replacement: "/src/assets/images" },
-      { find: "@utils", replacement: "/src/utils" },
-      { find: "@hooks", replacement: "/src/hooks" },
       { find: "@pages", replacement: "/src/pages" },
       { find: "@layout", replacement: "/src/layout" },
-      { find: "@context", replacement: "/src/context" },
-      { find: "@service", replacement: "/src/service" },
-      { find: "@types", replacement: "/src/types" },
-      { find: "@global-interface", replacement: "/src/interfaces/global.ts" },
-      { find: "@enums", replacement: "/src/types/enums" },
-      { find: "@hooks", replacement: "/src/hooks" },
+
+      { find: "@service", replacement: "/src/service/index.ts" },
+      { find: "@coocie", replacement: "/src/utils/token-service.ts" },
+      { find: "@dark-mode", replacement: "/src/utils/dark-mode.tsx" },
+
       { find: "@router", replacement: "/src/router" },
       { find: "@routes", replacement: "/src/router/routes.tsx" },
       { find: "@router-files", replacement: "/src/router/router.tsx" },
+
       { find: "@assets", replacement: "/src/assets" },
 
-      // icons
+      // ------------------- interface -------------------
+      { find: "@global-interface", replacement: "/src/interfaces/global.ts" },
+      {
+        find: "@auth-interface",
+        replacement: "/src/interfaces/auth/register.ts",
+      },
+
+      // ------------------- icons -------------------
       {
         find: "@global-icons",
         replacement: "/src/assets/icons/global-icons.tsx",
@@ -36,6 +38,12 @@ export default defineConfig({
         find: "@drawer-icons",
         replacement: "/src/assets/icons/drawer-icons.tsx",
       },
+
+      // -------------------------------------------
+      { find: "@validations", replacement: "/src/validations" },
+
+      // -------------------------------------------
+      { find: "@store", replacement: "/src/store/index.ts" },
     ],
   },
 });
