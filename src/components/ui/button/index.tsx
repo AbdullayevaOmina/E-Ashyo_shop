@@ -1,11 +1,5 @@
-import "./style.scss"
-
 const index = () => {
-  return (
-    <button> 
-      {/* code */}
-    </button>
-  )
-}
+  return <button>{/* code */}</button>;
+};
 
-export default index
+export default index;
