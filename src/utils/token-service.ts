@@ -9,3 +9,7 @@ export const setDataToCookie = (title: string, data: string) => {
 export const removeDataFromCookie = (title: string) => {
   Cookies.remove(title);
 };
+
+export const isAuthenticated = (): boolean => {
+  return !!getDataFromCookie("access_token");
+};

@@ -13,7 +13,7 @@ export default defineConfig({
       { find: "@layout", replacement: "/src/layout" },
 
       { find: "@service", replacement: "/src/service/index.ts" },
-      { find: "@coocie", replacement: "/src/utils/token-service.ts" },
+      { find: "@cookie", replacement: "/src/utils/token-service.ts" },
       { find: "@dark-mode", replacement: "/src/utils/dark-mode.tsx" },
 
       { find: "@router", replacement: "/src/router" },

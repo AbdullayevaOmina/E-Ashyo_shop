@@ -26,7 +26,7 @@
       "@context": ["./src/context"],
 
       "@service": ["./src/service/index.ts"],
-      "@coocie": ["./src/utils/token-service.ts"],
+      "@cookie": ["./src/utils/token-service.ts"],
 
       // --------------------- icons -----------------------
       "@drawer-icons": ["./src/assets/icons/drawer-icons.tsx"],

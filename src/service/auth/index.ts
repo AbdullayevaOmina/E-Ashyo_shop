@@ -1,4 +1,4 @@
-import { request } from "../config";
+import request from "../config";
 import { Request } from "@auth-interface";
 export const auth: Request = {
   signin: (data) => request.post("/admin/login", data),

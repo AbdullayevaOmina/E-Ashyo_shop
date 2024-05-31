@@ -4,3 +4,7 @@ import { ReactNode } from "react";
 export interface propType {
   children: ReactNode;
 }
+
+export interface ProtectedRouteProps {
+  element: JSX.Element;
+}

@@ -12,7 +12,7 @@ export const MaskedInput = ({ name, mask, ...props }: any) => {
 
   return (
     <>
-      <TextInput {...field} {...props} ref={inputRef} />
+      <TextInput {...field} {...props} ref={inputRef} className="mb-3" />
       {meta.touched && meta.error ? (
         <small className="text-[red]">{meta.error}</small>
       ) : null}

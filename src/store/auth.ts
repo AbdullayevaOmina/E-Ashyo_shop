@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import { AuthStore } from "@auth-interface";
 import { auth } from "@service";
-import { setDataToCookie } from "@coocie";
+import { setDataToCookie } from "@cookie";
 import { toast } from "react-toastify";
 
 const useRegisterStore = create<AuthStore>((set) => ({
@@ -12,19 +12,23 @@ const useRegisterStore = create<AuthStore>((set) => ({
     set({ isLoading: true });
     try {
       const response: any = await auth.signin(data);
-      if (response.status === 200) {
-        set({ data: response.data });
-        setDataToCookie("access_token", response.data.access_token);
-        setDataToCookie("refresh_token", response.data.refresh_token);
-        setDataToCookie("user_id", response.data.id);
-        toast.success("Welkome!");
-      } else if (response.status === 400) {
-        toast.warning("Email yoki parol xato!");
-      } else if (response.status === 404) {
-        toast.warning("Siz hali ro'yxatdan otmagansiz");
-      } else if (response.status === 500) {
-        toast.warning("Kechirasiz server bilan aloqa uzildi");
-      }
+      if (response.status === 201) {
+        set({ data: response.data.admin });
+        setDataToCookie("access_token", response.data.tokens.access_token);
+        setDataToCookie("refresh_token", response.data.tokens.refresh_token);
+        setDataToCookie("last_name", response.data.admin.last_name);
+        setDataToCookie("first_name", response.data.admin.first_name);
+        setDataToCookie("admin_email", response.data.admin.email);
+        setDataToCookie("admin_phone_number", response.data.admin.phone_number);
+        setDataToCookie("admin_id", response.data.admin.id);
+        toast.success("Welcome!");
+      } else if (response.status === 400)
+        toast.warning("Wrong email or password!");
+      else if (response.status === 404)
+        toast.info("You are not registered yet. Please sign up");
+      else if (response.status === 500)
+        toast.warning("Sorry, the connection to the server has been lost");
+
       return response.status;
     } catch (error) {
       console.error("Sign-in error:", error);

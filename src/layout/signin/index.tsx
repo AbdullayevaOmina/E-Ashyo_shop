@@ -6,27 +6,22 @@ import { Signin } from "@auth-interface";
 import { Link, useNavigate } from "react-router-dom";
 import { useRegisterStore } from "@store";
 import { ErrorMessage, Field, Form, Formik } from "formik";
-import { toast } from "react-toastify";
 
 export default function SignIn() {
-  const navigate = useNavigate();
   const { signin } = useRegisterStore();
+  const navigate = useNavigate();
 
   const initialValues: Signin = {
-    email: "",
-    password: "",
+    email: "t0664005@gmail.com",
+    password: "Akmalweb12@",
   };
 
   const handleSubmit = async (values: Signin) => {
-    try {
-      const response = await signin(values);
-      if (response.status === 201) {
-        toast.success("Welcome! 🤗");
-        navigate("/main");
-      }
-    } catch (error) {
-      console.error("Sign-up error:", error);
-    }
+    const status = await signin(values);
+    if (status === 201) {
+      navigate("/main");
+      window.location.reload();
+    } else if (status === 404) navigate("/signup");
   };
 
   return (
@@ -41,7 +36,7 @@ export default function SignIn() {
           onSubmit={handleSubmit}
         >
           {({ isSubmitting }) => (
-            <Form className="flex flex-col gap-2">
+            <Form className="grid gap-2">
               <Field
                 name="email"
                 type="email"
@@ -71,7 +66,7 @@ export default function SignIn() {
 
               <div className="flex justify-between mb-4">
                 <small className="dark:text-gray-300">
-                  You have not registered yet??
+                  Not registered yet?
                 </small>
                 <Link to="/signup" className="text-[13px] text-sky-500">
                   Sign Up

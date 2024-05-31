@@ -48,7 +48,7 @@ export default function Signin() {
           onSubmit={handleSubmit}
         >
           {({ isSubmitting }) => (
-            <Form className="flex flex-col gap-2">
+            <Form className="grid gap-1">
               <Field
                 name="first_name"
                 type="text"
@@ -112,7 +112,9 @@ export default function Signin() {
               />
 
               <div className="flex justify-between mb-4">
-                <small className="dark:text-gray-300 ">Already registered?</small>
+                <small className="dark:text-gray-300 ">
+                  Are you already registered?
+                </small>
                 <Link to="/" className="text-[13px] text-sky-500">
                   Sign In
                 </Link>
@@ -122,7 +124,6 @@ export default function Signin() {
                 {isSubmitting ? (
                   <>
                     <Spinner aria-label="Spinner button example" size="sm" />{" "}
-                    Submitting
                   </>
                 ) : (
                   "Submit"
