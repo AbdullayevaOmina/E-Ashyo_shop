@@ -6,6 +6,8 @@ import { Signin } from "@auth-interface";
 import { Link, useNavigate } from "react-router-dom";
 import { useRegisterStore } from "@store";
 import { ErrorMessage, Field, Form, Formik } from "formik";
+// import Logo from "../../assets/Logo-sign-page.png";
+import "./style.css";
 
 export default function SignIn() {
   const { signin } = useRegisterStore();
@@ -26,7 +28,10 @@ export default function SignIn() {
 
   return (
     <div className="flex items-center justify-center w-screen h-screen">
-      <Card className="w-96">
+      {/* <div className="w-[45%] h-full bg-gra-200 p-24">
+        <img src={Logo} alt="" className="rotating" />
+      </div> */}
+      <Card className="w-96 bg-slate-400">
         <h1 className="text-center text-[#0e7490] my-3 text-2xl font-semibold dark:text-white">
           Sign In
         </h1>

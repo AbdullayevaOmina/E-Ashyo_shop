@@ -8,6 +8,8 @@ import {
 import avatar from "../../assets/avatar.png";
 import { getDataFromCookie, removeDataFromCookie } from "@cookie";
 import { useNavigate } from "react-router-dom";
+// import Logo2 from "../../assets/logo.png";
+import Logo2 from "../../assets/logo2.png";
 
 const index = () => {
   const navigate = useNavigate();
@@ -47,9 +49,8 @@ const index = () => {
               href="/"
               className="hidden md:flex items-center justify-between mr-4"
             >
-              {/* <img src="" className="mr-3 h-8" alt="E-Ashyo shop" /> */}
               <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-                E-Ashyo shop
+              <img src={Logo2} className="mr-3 h-7 w-auto" alt="E-Ashyo shop" />
               </span>
             </a>
 
@@ -57,7 +58,7 @@ const index = () => {
               <label htmlFor="topbar-search" className="sr-only">
                 Search
               </label>
-              <div className="relative md:ml-24 md:w-72 lg:w-[400px] xl:w-[500px]">
+              <div className="relative md:ml-10 md:w-72 lg:w-[400px] xl:w-[500px]">
                 <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
                   {SearchIcon}
                 </div>
