@@ -2,7 +2,7 @@ import * as Yup from "yup";
 
 // ---------------------- Signin ----------------------
 export const schemaSignin = Yup.object().shape({
-  email: Yup.string().email("Email invalit ").required("Email is required"),
+  email: Yup.string().email("Email invalit").required("Email is required"),
   password: Yup.string()
     .matches(
       /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/,
@@ -10,6 +10,7 @@ export const schemaSignin = Yup.object().shape({
     )
     .required("Password is required"),
 });
+
 
 // ---------------------- Signup ----------------------
 export const schemaSignup = Yup.object().shape({

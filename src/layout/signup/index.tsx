@@ -27,7 +27,7 @@ export default function Signin() {
 
     try {
       const response = await signup(payload);
-      if (response.status === 200) {
+      if (response.status === 201) {
         toast.success("You registrated! 🤗");
         navigate("/");
       }
@@ -111,8 +111,8 @@ export default function Signin() {
                 }
               />
 
-              <div className="flex justify-between my-3">
-                <small>Already registered?</small>
+              <div className="flex justify-between mb-4">
+                <small className="dark:text-gray-300 ">Already registered?</small>
                 <Link to="/" className="text-[13px] text-sky-500">
                   Sign In
                 </Link>
