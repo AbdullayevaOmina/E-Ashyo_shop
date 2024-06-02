@@ -48,7 +48,17 @@ const useRegisterStore = create<AuthStore>((set) => ({
     }
   },
 
-  logout: async () => {},
+  logout: async () => {
+    set({ isLoading: true });
+    try {
+      const response: any = await auth.logout();
+      return response.status;
+    } catch (error) {
+      console.error("Log-out error:", error);
+    } finally {
+      set({ isLoading: false });
+    }
+  },
 }));
 
 export default useRegisterStore;
