@@ -31,11 +31,11 @@ export default function SignIn() {
   return (
     <div className="flex items-center justify-between w-screen h-screen px-5">
       <div className="relative w-[50%] bg-gra-200 p-28  flex items-center justify-center">
-        <img src={frame1} className="rotate-clockwise absolute w-[520px]" />
+        <img src={frame1} className="rotate-clockwise absolute w-[500px]" />
         <img src={Logo} className="fixed z-10 w-[500px]" />
-        <img src={frame2} className="rotate-clockwise absolute w-[520px]" />
+        <img src={frame2} className="rotate-clockwise absolute w-[500px]" />
       </div>
-      <div className="w-[50%] bg-gra-200 ml-8a">
+      <div className="w-[50%] bg-gra-200 ml-8a flex justify-center">
         <Card className="w-96 shadow-lg ">
           <h1 className="text-center text-[#0e7490] my-3 text-3xl font-semibold dark:text-white">
             Sign In
