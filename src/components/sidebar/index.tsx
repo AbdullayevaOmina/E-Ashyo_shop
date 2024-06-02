@@ -1,4 +1,4 @@
-import { SettingsIcon, OwerviewIcon, MessagesIcon } from "@drawer-icons";
+import { SettingsIcon, MessagesIcon } from "@drawer-icons";
 import router from "@routes";
 import { DarkModeButton } from "@dark-mode";
 import { Link, useLocation } from "react-router-dom";
@@ -38,7 +38,9 @@ export default function Sidebar() {
                 <Link
                   to={item.path}
                   className={`flex items-center p-2 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 ${
-                    location.pathname === item.path ? "bg-gray-100 dark:bg-gray-700 " : ""
+                    location.pathname === item.path
+                      ? "bg-gray-100 dark:bg-gray-700 "
+                      : ""
                   }`}
                 >
                   {item.icon}
@@ -64,7 +66,9 @@ export default function Sidebar() {
               <Link
                 to="/main/settings"
                 className={`flex items-center p-2 text-base font-medium text-gray-900 rounded-lg transition duration-75 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group ${
-                  location.pathname === "/main/settings" ? "bg-gray-100" : ""
+                  location.pathname === "/main/settings"
+                    ? "bg-gray-100 dark:bg-gray-700"
+                    : ""
                 }`}
               >
                 {SettingsIcon}
