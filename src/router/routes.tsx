@@ -3,6 +3,7 @@ import {
   CatgoryIcon,
   BrandsIcon,
   ModelsIcon,
+  SalesIcon,
 } from "@drawer-icons";
 
 const router = [
@@ -20,6 +21,11 @@ const router = [
     path: "/main/brands",
     content: "Brands",
     icon: BrandsIcon,
+  },
+  {
+    path: "/main/sales",
+    content: "Sales",
+    icon: SalesIcon,
   },
   {
     path: "/main/categories",

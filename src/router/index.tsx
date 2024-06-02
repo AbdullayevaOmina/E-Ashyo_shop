@@ -5,7 +5,16 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import App from "../App";
-import { Brands, Categories, Home, Models, NotFound, Products } from "@pages";
+import {
+  Brands,
+  Categories,
+  Home,
+  Models,
+  NotFound,
+  Products,
+  Sales,
+  Settings,
+} from "@pages";
 import { MainLayout, SignIn, SignUp } from "@layout";
 import { ProtectedRoute, RequireAuth } from "./protected-routes/index";
 
@@ -26,7 +35,9 @@ const index = () => {
           <Route path="products" element={<Products />} />
           <Route path="brands" element={<Brands />} />
           <Route path="models" element={<Models />} />
+          <Route path="sales" element={<Sales />} />
           <Route path="categories" element={<Categories />} />
+          <Route path="settings" element={<Settings />} />
         </Route>
         <Route path="*" element={<NotFound />} />
       </Route>
