@@ -1,25 +1,30 @@
-import { Products, Posts, Orders, Messages } from "@pages";
+import {
+  ProductsIcon,
+  CatgoryIcon,
+  BrandsIcon,
+  ModelsIcon,
+} from "@drawer-icons";
 
 const router = [
   {
     path: "/main/products",
-    element: <Products />,
     content: "Products",
+    icon: ProductsIcon,
   },
   {
-    path: "/main/posts",
-    element: <Posts />,
-    content: "Posts",
+    path: "/main/models",
+    content: "Models",
+    icon: ModelsIcon,
   },
   {
-    path: "/main/messages",
-    element: <Messages />,
-    content: "Messages",
+    path: "/main/brands",
+    content: "Brands",
+    icon: BrandsIcon,
   },
   {
-    path: "/main/orders",
-    element: <Orders />,
-    content: "Orders",
+    path: "/main/categories",
+    content: "Categories",
+    icon: CatgoryIcon,
   },
 ];
 

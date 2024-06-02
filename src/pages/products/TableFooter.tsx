@@ -1,5 +1,4 @@
-
-const Navbar = () => {
+const TableFooter = () => {
   return (
     <>
       <nav
@@ -106,4 +105,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default TableFooter;

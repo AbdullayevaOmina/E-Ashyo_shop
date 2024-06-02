@@ -1,10 +1,7 @@
 import Home from "./home";
-import About from "./about";
-import Contact from "./contact";
 import Products from "./products/index";
-import Posts from "./posts";
-import Messages from "./messages/index";
-import Orders from "./orders/index";
-import Auth from "./auth";
+import Brands from "./brands/index";
+import Categories from "./categories/index";
+import Models from "./models/index";
 import NotFound from "./notfound";
-export { Home, About, Contact, Products, Posts, Auth, NotFound, Messages, Orders };
+export { Home, Products, NotFound, Brands, Categories, Models };

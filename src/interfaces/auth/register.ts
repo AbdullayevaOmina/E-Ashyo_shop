@@ -16,6 +16,7 @@ export interface AuthStore {
   isLoading: boolean;
   signin: (data: Signin) => Promise<any>;
   signup: (data: Signup) => Promise<any>;
+  logout: () => Promise<any>;
 }
 
 export interface Request {

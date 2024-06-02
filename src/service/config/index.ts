@@ -5,23 +5,47 @@ const request = axios.create({
   baseURL: "http://18.159.214.90/api",
 });
 
+// async function refreshAccessToken() {
+//   try {
+//     const refresh_token = getDataFromCookie("refresh_token");
+
+//     if (!refresh_token) {
+//       throw new Error("refresh token yo'q");
+//     }
+
+//     const response = await axios.post(
+//       `http://18.159.214.90/api/admin/refresh-token/${refresh_token}`
+//     );
+
+//     const { access_token } = response.data;
+//     if (access_token) {
+//       setDataToCookie("access_token", access_token);
+//     }
+//     return access_token;
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
+
 async function refreshAccessToken() {
   try {
-    const refresh_token = getDataFromCookie("refresh_token");
+    const id = getDataFromCookie("admin_id");
 
-    if (!refresh_token) {
+    if (!id) {
       throw new Error("refresh token yo'q");
     }
 
     const response = await axios.post(
-      `http://18.159.214.90/api/admin/refresh-token/${refresh_token}`
+      `http://18.159.214.90/api/admin/refresh-token/${id}`
     );
 
-    const { access_token } = response.data;
-    if (access_token) {
-      setDataToCookie("access_token", access_token);
+    if (response.status === 204) {
+      const { access_token } = response.data;
+      if (access_token) {
+        setDataToCookie("access_token", access_token);
+      }
+      return access_token;
     }
-    return access_token;
   } catch (error) {
     console.log(error);
   }

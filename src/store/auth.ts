@@ -21,7 +21,6 @@ const useRegisterStore = create<AuthStore>((set) => ({
         setDataToCookie("admin_email", response.data.admin.email);
         setDataToCookie("admin_phone_number", response.data.admin.phone_number);
         setDataToCookie("admin_id", response.data.admin.id);
-        toast.success("Welcome!");
       } else if (response.status === 400)
         toast.warning("Wrong email or password!");
       else if (response.status === 404)
@@ -48,6 +47,8 @@ const useRegisterStore = create<AuthStore>((set) => ({
       set({ isLoading: false });
     }
   },
+
+  logout: async () => {},
 }));
 
 export default useRegisterStore;

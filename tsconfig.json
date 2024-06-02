@@ -15,7 +15,7 @@
       "@hooks": ["./src/hooks"],
 
       "@components": ["./src/components"],
-      "@containers": ["./src/components/containers"],
+      "@modals": ["./src/components/modals/index.ts"],
       "@ui": ["./src/components/ui"],
       "@sections": ["./src/components/sections"],
 

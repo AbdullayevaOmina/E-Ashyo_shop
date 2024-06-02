@@ -9,7 +9,7 @@ export const DarkModeButton = () => {
   });
 
   useEffect(() => {
-    if (!darkMode) {
+    if (darkMode) {
       document.documentElement.classList.add("dark");
       document.body.classList.add("bg-gray-900", "text-white");
     } else {

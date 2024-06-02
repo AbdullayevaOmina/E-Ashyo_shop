@@ -41,8 +41,8 @@ export const SearchIcon: ReactNode = (
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
     ></path>
   </svg>
@@ -79,48 +79,7 @@ export const BellIcon: ReactNode = (
 /* ===============<!-- Navbar -->================= */
 
 /* ===============<!-- Sidebar -->================= */
-export const CustomSVG: ReactNode = (
-  <svg
-    aria-hidden="true"
-    className="h-5 w-5 rounded-full mt-0.5"
-    xmlns="http://www.w3.org/2000/svg"
-    xmlnsXlink="http://www.w3.org/1999/xlink"
-    viewBox="0 0 3900 3900"
-  >
-    <path fill="#b22234" d="M0 0h7410v3900H0z" />
-    <path
-      d="M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0"
-      stroke="#fff"
-      strokeWidth="300"
-    />
-    <path fill="#3c3b6e" d="M0 0h2964v2100H0z" />
-    <g fill="#fff">
-      <g id="d">
-        <g id="c">
-          <g id="e">
-            <g id="b">
-              <path
-                id="a"
-                d="M247 90l70.534 217.082-184.66-134.164h228.253L176.466 307.082z"
-              />
-              <use xlinkHref="#a" y="420" />
-              <use xlinkHref="#a" y="840" />
-              <use xlinkHref="#a" y="1260" />
-            </g>
-            <use xlinkHref="#a" y="1680" />
-          </g>
-          <use xlinkHref="#b" x="247" y="210" />
-        </g>
-        <use xlinkHref="#c" x="494" />
-      </g>
-      <use xlinkHref="#d" x="988" />
-      <use xlinkHref="#c" x="1976" />
-      <use xlinkHref="#e" x="2470" />
-    </g>
-  </svg>
-);
-
-export const CustomSVG2: ReactNode = (
+export const SettingsIcon: ReactNode = (
   <svg
     aria-hidden="true"
     className="w-6 h-6"
@@ -136,133 +95,107 @@ export const CustomSVG2: ReactNode = (
   </svg>
 );
 
-export const CustomSVG3: ReactNode = (
+export const OwerviewIcon: ReactNode = (
   <svg
     aria-hidden="true"
-    className="w-6 h-6"
+    className="w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
     fill="currentColor"
     viewBox="0 0 20 20"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <path d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z"></path>
+    <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
+    <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
   </svg>
 );
 
-export const CustomSVG4: ReactNode = (
+export const ProductsIcon: ReactNode = (
   <svg
+    className="w-6 h-6 text-gray-700 dark:text-gray-200"
     aria-hidden="true"
-    className="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-    fill="currentColor"
-    viewBox="0 0 20 20"
     xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    fill="none"
+    viewBox="0 0 24 24"
   >
     <path
-      fillRule="evenodd"
-      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-2 0c0 .993-.241 1.929-.668 2.754l-1.524-1.525a3.997 3.997 0 00.078-2.183l1.562-1.562C15.802 8.249 16 9.1 16 10zm-5.165 3.913l1.58 1.58A5.98 5.98 0 0110 16a5.976 5.976 0 01-2.516-.552l1.562-1.562a4.006 4.006 0 001.789.027zm-4.677-2.796a4.002 4.002 0 01-.041-2.08l-.08.08-1.53-1.533A5.98 5.98 0 004 10c0 .954.223 1.856.619 2.657l1.54-1.54zm1.088-6.45A5.974 5.974 0 0110 4c.954 0 1.856.223 2.657.619l-1.54 1.54a4.002 4.002 0 00-2.346.033L7.246 4.668zM12 10a2 2 0 11-4 0 2 2 0 014 0z"
-      clipRule="evenodd"
-    ></path>
-  </svg>
-);
-export const CustomSVG5: ReactNode = (
-  <svg
-    aria-hidden="true"
-    className="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-    fill="currentColor"
-    viewBox="0 0 20 20"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z"></path>
+      stroke="currentColor"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      d="M10 12v1h4v-1m4 7H6a1 1 0 0 1-1-1V9h14v9a1 1 0 0 1-1 1ZM4 5h16a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"
+    />
   </svg>
 );
 
-export const CustomSVG6: ReactNode = (
+export const CatgoryIcon: ReactNode = (
   <svg
+    className="w-6 h-6 text-gray-800 dark:text-white"
     aria-hidden="true"
-    className="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-    fill="currentColor"
-    viewBox="0 0 20 20"
     xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    fill="none"
+    viewBox="0 0 24 24"
   >
-    <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path>
+    <path
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeWidth="2"
+      d="M20 6H10m0 0a2 2 0 1 0-4 0m4 0a2 2 0 1 1-4 0m0 0H4m16 6h-2m0 0a2 2 0 1 0-4 0m4 0a2 2 0 1 1-4 0m0 0H4m16 6H10m0 0a2 2 0 1 0-4 0m4 0a2 2 0 1 1-4 0m0 0H4"
+    />
+  </svg>
+);
+
+export const BrandsIcon: ReactNode = (
+  <svg
+    className="w-6 h-6 text-gray-800 dark:text-white"
+    aria-hidden="true"
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path d="M11 9a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z" />
     <path
       fill-rule="evenodd"
-      d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z"
+      d="M9.896 3.051a2.681 2.681 0 0 1 4.208 0c.147.186.38.282.615.255a2.681 2.681 0 0 1 2.976 2.975.681.681 0 0 0 .254.615 2.681 2.681 0 0 1 0 4.208.682.682 0 0 0-.254.615 2.681 2.681 0 0 1-2.976 2.976.681.681 0 0 0-.615.254 2.682 2.682 0 0 1-4.208 0 .681.681 0 0 0-.614-.255 2.681 2.681 0 0 1-2.976-2.975.681.681 0 0 0-.255-.615 2.681 2.681 0 0 1 0-4.208.681.681 0 0 0 .255-.615 2.681 2.681 0 0 1 2.976-2.975.681.681 0 0 0 .614-.255ZM12 6a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"
+      clip-rule="evenodd"
+    />
+    <path d="M5.395 15.055 4.07 19a1 1 0 0 0 1.264 1.267l1.95-.65 1.144 1.707A1 1 0 0 0 10.2 21.1l1.12-3.18a4.641 4.641 0 0 1-2.515-1.208 4.667 4.667 0 0 1-3.411-1.656Zm7.269 2.867 1.12 3.177a1 1 0 0 0 1.773.224l1.144-1.707 1.95.65A1 1 0 0 0 19.915 19l-1.32-3.93a4.667 4.667 0 0 1-3.4 1.642 4.643 4.643 0 0 1-2.53 1.21Z" />
+  </svg>
+);
+
+export const ModelsIcon: ReactNode = (
+  <svg
+    className="w-6 h-6 text-gray-800 dark:text-white"
+    aria-hidden="true"
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path
+      fill-rule="evenodd"
+      d="M5.024 3.783A1 1 0 0 1 6 3h12a1 1 0 0 1 .976.783L20.802 12h-4.244a1.99 1.99 0 0 0-1.824 1.205 2.978 2.978 0 0 1-5.468 0A1.991 1.991 0 0 0 7.442 12H3.198l1.826-8.217ZM3 14v5a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5h-4.43a4.978 4.978 0 0 1-9.14 0H3Zm5-7a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H9a1 1 0 0 1-1-1Zm0 2a1 1 0 0 0 0 2h8a1 1 0 1 0 0-2H8Z"
+      clip-rule="evenodd"
+    />
+  </svg>
+);
+export const PagesIcon: ReactNode = (
+  <svg
+    aria-hidden="true"
+    className="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white"
+    fill="currentColor"
+    viewBox="0 0 20 20"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      fill-rule="evenodd"
+      d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
       clip-rule="evenodd"
     ></path>
   </svg>
 );
-export const CustomSVG7: ReactNode = (
-  <svg
-    aria-hidden="true"
-    className="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
-    fill="currentColor"
-    viewBox="0 0 20 20"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z"></path>
-  </svg>
-);
 /* ===============<!-- Sidebar -->================= */
-
-export const SmallUSFlagIcon: ReactNode = (
-  <svg
-    aria-hidden="true"
-    aria-label="United States Flag"
-    className="h-3.5 w-3.5 rounded-full mr-2"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 512 512"
-  >
-    <g fillRule="evenodd">
-      <g strokeWidth="1pt">
-        <path
-          fill="#bd3d44"
-          d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
-          transform="scale(3.9385)"
-        />
-        <path
-          fill="#fff"
-          d="M0 10h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
-          transform="scale(3.9385)"
-        />
-      </g>
-      <path fill="#192f5d" d="M0 0h98.8v70H0z" transform="scale(3.9385)" />
-      <path
-        fill="#fff"
-        d="M8.2 3l1 2.8H12L9.7 7.5l.9 2.7-2.4-1.7L6 10.2l.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7L74 8.5l-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 7.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 24.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 21.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 38.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 35.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3z"
-        transform="scale(3.9385)"
-      />
-    </g>
-  </svg>
-);
-
-export const LargeUSFlagIcon: ReactNode = (
-  <svg
-    aria-hidden="true"
-    aria-label="United States Flag"
-    className="h-5 w-5 rounded-full mr-2"
-    viewBox="0 0 24 24"
-  >
-    <defs>
-      <mask id="a">
-        <path fill="#fff" d="M0 0h24v24H0z" />
-      </mask>
-      <mask id="b">
-        <path fill="#fff" d="M0 0h10v7H0z" />
-      </mask>
-    </defs>
-    <path
-      fill="#bd3d44"
-      d="M24 1v2H0V1zm0 4v2H0V5zm0 4v2H0V9zm0 4v2H0v-2zm0 4v2H0v-2zm0 4v2H0v-2z"
-    />
-    <path
-      fill="#fff"
-      d="M24 0v1H0V0zm0 4v1H0V4zm0 4v1H0V8zm0 4v1H0v-1zm0 4v1H0v-1zm0 4v1H0v-1z"
-    />
-    <g fill="#192f5d" mask="url(#a)">
-      <path d="M0 0h10v7H0z" />
-      <g mask="url(#b)">
-        <path d="M0 0v.5h.7L.5.9.7 1v.1H1v-.1l.3-.4.2.4v.1h.3V1L1.7.5H2V0h-.3L1.5.3 1.2 0zm2 0v.5h.7l-.2.4.2.1v.1h.3v-.1L3 .5h.3V0H3l-.3.3-.2-.3zm2 0v.5h.7l-.2.4.2.1v.1h.3v-.1L5 .5h.3V0H5l-.3.3-.2-.3zm2 0v.5h.7l-.2.4.2.1v.1h.3v-.1L7 .5h.3V0H7l-.3.3-.2-.3zm2 0v.5h.7l-.2.4.2.1v.1h.3v-.1L9 .5h.3V0H9l-.3.3L8.5 0zm-8 1v.5h.7L.5 2l.2.1v.1H1V2l.3-.4.2.4v.1h.3V2L1.7 1H2V1h-.3l-.2.3-.3-.3zm2 0v.5h.7L2.5 2l.2.1v.1H3V2l.3-.4.2.4v.1h.3V2L3.7 1H4V1h-.3L3.5 1.3 3.2 1zm2 0v.5h.7L4.5 2l.2.1v.1H5V2l.3-.4.2.4v.1h.3V2L5.7 1H6V1h-.3L5.5 1.3 5.2 1zm2 0v.5h.7L6.5 2l.2.1v.1H7V2l.3-.4.2.4v.1h.3V2L7.7 1H8V1h-.3L7.5 1.3 7.2 1zm2 0v.5h.7L8.5 2l.2.1v.1H9V2l.3-.4.2.4v.1h.3V2L9.7 1H10V1h-.3L9.5 1.3 9.2 1zM0 2v.5h.7l-.2.4.2.1v.1H1v-.1l.3-.4.2.4v.1h.3V3L1.7 2H2V2h-.3L1.5 2.3 1.2 2zm2 0v.5h.7l-.2.4.2.1v.1H3v-.1l.3-.4.2.4v.1h.3V3L3.7 2H4V2h-.3L3.5 2.3 3.2 2zm2 0v.5h.7l-.2.4.2.1v.1H5v-.1l.3-.4.2.4v.1h.3V3L5.7 2H6V2h-.3L5.5 2.3 5.2 2zm2 0v.5h.7l-.2.4.2.1v.1H7v-.1l.3-.4.2.4v.1h.3V3L7.7 2H8V2h-.3L7.5 2.3 7.2 2zm2 0v.5h.7l-.2.4.2.1v.1H9v-.1L9.3 2l.2.4v.1h.3V3L9.7 2H10V2h-.3L9.5 2.3 9.2 2zM0 3v.5h.7L.5 4l.2.1v.1H1V4l.3-.4.2.4v.1h.3V4L1.7 3H2V3h-.3l-.2.3L1.2 3zm2 0v.5h.7L2.5 4l.2.1v.1H3V4l.3-.4.2.4v.1h.3V4L3.7 3H4V3h-.3L3.5 3.3 3.2 3zm2 0v.5h.7L4.5 4l.2.1v.1H5V4l.3-.4.2.4v.1h.3V4L5.7 3H6V3h-.3L5.5 3.3 5.2 3zm2 0v.5h.7L6.5 4l.2.1v.1H7V4l.3-.4.2.4v.1h.3V4L7.7 3H8V3h-.3L7.5 3.3 7.2 3zm2 0v.5h.7L8.5 4l.2.1v.1H9V4l.3-.4.2.4v.1h.3V4L9.7 3H10V3h-.3L9.5 3.3 9.2 3zM0 4v.5h.7L.5 5l.2.1v.1H1V5l.3-.4.2.4v.1h.3V5L1.7 4H2V4h-.3L1.5 4.3 1.2 4zm2 0v.5h.7L2.5 5l.2.1v.1H3V5l.3-.4.2.4v.1h.3V5L3.7 4H4V4h-.3L3.5 4.3 3.2 4zm2 0v.5h.7L4.5 5l.2.1v.1H5V5l.3-.4.2.4v.1h.3V5L5.7 4H6V4h-.3L5.5 4.3 5.2 4zm2 0v.5h.7L6.5 5l.2.1v.1H7V5l.3-.4.2.4v.1h.3V5L7.7 4H8V4h-.3L7.5 4.3 7.2 4zm2 0v.5h.7L8.5 5l.2.1v.1H9V5l.3-.4.2.4v.1h.3V5L9.7 4H10V4h-.3L9.5 4.3 9.2 4zm-9 1v.5h.7L.5 6l.2.1v.1H1V6l.3-.4.2.4v.1h.3V6L1.7 5H2V5h-.3L1.5 5.3 1.2 5zm2 0v.5h.7L2.5 6l.2.1v.1H3V6l.3-.4.2.4v.1h.3V6L3.7 5H4V5h-.3L3.5 5.3 3.2 5zm2 0v.5h.7L4.5 6l.2.1v.1H5V6l.3-.4.2.4v.1h.3V6L5.7 5H6V5h-.3L5.5 5.3 5.2 5zm2 0v.5h.7L6.5 6l.2.1v.1H7V6l.3-.4.2.4v.1h.3V6L7.7 5H8V5h-.3L7.5 5.3 7.2 5zm2 0v.5h.7L8.5 6l.2.1v.1H9V6l.3-.4.2.4v.1h.3V6L9.7 5H10V5h-.3L9.5 5.3 9.2 5z" />
-      </g>
-    </g>
-  </svg>
-);
