@@ -4,9 +4,15 @@ import {
   BrandsIcon,
   ModelsIcon,
   SalesIcon,
+  OwerviewIcon,
 } from "@drawer-icons";
 
 const router = [
+  {
+    path: "/main",
+    content: "Overview",
+    icon: OwerviewIcon,
+  },
   {
     path: "/main/products",
     content: "Products",

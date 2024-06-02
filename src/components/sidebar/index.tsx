@@ -1,10 +1,12 @@
 import { SettingsIcon, OwerviewIcon, MessagesIcon } from "@drawer-icons";
 import router from "@routes";
 import { DarkModeButton } from "@dark-mode";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { searchIconMD } from "@global-icons";
 
-export default function Saidebar() {
+export default function Sidebar() {
+  const location = useLocation();
+
   return (
     <>
       <aside
@@ -31,24 +33,16 @@ export default function Saidebar() {
             </div>
           </form>
           <ul className="space-y-2">
-            <li>
-              <Link
-                to="/main"
-                className="flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
-              >
-                {OwerviewIcon}
-                <span className="ml-3">Overview</span>
-              </Link>
-            </li>
-
-            {router.map((item, _) => (
-              <li key={_}>
+            {router.map((item, index) => (
+              <li key={index}>
                 <Link
                   to={item.path}
-                  className="flex items-center p-2  w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  className={`flex items-center p-2 w-full text-base font-medium text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 ${
+                    location.pathname === item.path ? "bg-gray-100 dark:bg-gray-700 " : ""
+                  }`}
                 >
                   {item.icon}
-                  <span className="ml-3"> {item.content}</span>
+                  <span className="ml-3">{item.content}</span>
                 </Link>
               </li>
             ))}
@@ -59,7 +53,7 @@ export default function Saidebar() {
               >
                 {MessagesIcon}
                 <span className="flex-1 ml-3 whitespace-nowrap">Messages</span>
-                <span className="inline-flex justify-center items-center w-5 h-5 text-xs font-semibold rounded-full text-primary-800 bg-sky-200 dark:bg-sky-600 ">
+                <span className="inline-flex justify-center items-center w-5 h-5 text-xs font-semibold rounded-full text-primary-800 bg-sky-200 dark:bg-sky-600">
                   4
                 </span>
               </a>
@@ -69,7 +63,9 @@ export default function Saidebar() {
             <li>
               <Link
                 to="/main/settings"
-                className="flex items-center p-2 text-base font-medium text-gray-900 rounded-lg transition duration-75 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group"
+                className={`flex items-center p-2 text-base font-medium text-gray-900 rounded-lg transition duration-75 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group ${
+                  location.pathname === "/main/settings" ? "bg-gray-100" : ""
+                }`}
               >
                 {SettingsIcon}
                 <span className="ml-3">Setting</span>
