@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 
 const index = () => {
   return (
-    <div className="antialiased bg-gray-50 dark:bg-gray-900 scrol">
+    <div className="antialiased bg-gray-200 dark:bg-gray-900 scrol">
       <Header />
       <SideBar />
       <div className="">

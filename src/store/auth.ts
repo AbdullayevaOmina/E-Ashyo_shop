@@ -12,6 +12,8 @@ const useRegisterStore = create<AuthStore>((set) => ({
     set({ isLoading: true });
     try {
       const response: any = await auth.signin(data);
+      console.log(response);
+      
       if (response.status === 201) {
         set({ data: response.data.admin });
         setDataToCookie("access_token", response.data.tokens.access_token);
@@ -40,7 +42,7 @@ const useRegisterStore = create<AuthStore>((set) => ({
     set({ isLoading: true });
     try {
       const response: any = await auth.signup(data);
-      return response.status;
+      return response;
     } catch (error) {
       console.error("Sign-up error:", error);
     } finally {

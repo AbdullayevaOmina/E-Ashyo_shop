@@ -3,6 +3,7 @@ import axios from "axios";
 
 const request = axios.create({
   baseURL: "http://18.159.214.90/api",
+  
 });
 
 // async function refreshAccessToken() {
@@ -32,7 +33,7 @@ async function refreshAccessToken() {
     const id = getDataFromCookie("admin_id");
 
     if (!id) {
-      throw new Error("refresh token yo'q");
+      throw new Error("ID yo'q");
     }
 
     const response = await axios.post(
@@ -54,7 +55,7 @@ async function refreshAccessToken() {
 request.interceptors.request.use((config) => {
   const access_token = getDataFromCookie("access_token");
   if (access_token) {
-    config.headers["Authorization"] = access_token;
+    config.headers["Authorization"] =`Bearer ${access_token}`;
   }
   return config;
 });

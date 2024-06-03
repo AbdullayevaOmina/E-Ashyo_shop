@@ -1,2 +1,4 @@
 import Ask from "./ask";
-export { Ask };
+import { CreateCategoryModal } from "./category/create";
+import { DeleteCategoryModal } from "./category/delete";
+export { Ask, CreateCategoryModal, DeleteCategoryModal };

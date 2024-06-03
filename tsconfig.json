@@ -15,7 +15,7 @@
       "@hooks": ["./src/hooks"],
 
       "@components": ["./src/components"],
-      "@modals": ["./src/components/modals/index.ts"],
+      "@modals": ["src/components/modals/index.ts"],
       "@ui": ["./src/components/ui"],
       "@sections": ["./src/components/sections"],
 
@@ -37,7 +37,8 @@
 
       // --------------------- interface -----------------------
       "@global-interface": ["./src/interfaces/global.ts"],
-      "@auth-interface": ["./src/interfaces//auth/register.ts"],
+      "@auth-interface": ["./src/interfaces/auth/register.ts"],
+      "@category-interface": ["./src/interfaces/category.ts"],
 
       // --------------------------------------------------------
       "@validations": ["./src/validations"],

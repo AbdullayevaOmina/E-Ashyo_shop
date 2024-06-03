@@ -1,29 +1,34 @@
-// --------------------------------- brand
+// --------------------------------- Category
 // POST
-export interface CreateBrand {
-  brand_name: string;
-  brand_description: string;
-  position: number;
-  image: string | undefined;
+export interface CreateCategory {
+  category_name: string;
+  parent_category_id: number | null | undefined;
+  position: number | null | undefined;
 }
+
 // PUT
-export interface UpdateBrand extends CreateBrand {}
+export interface UpdateCategory {
+  id: string;
+  data: CreateCategory;
+}
 
 // STORE
-export interface ProductStore {
+export interface CategoryStore {
   data: any[];
   isLoading: boolean;
-  create: (data: CreateBrand) => Promise<any>;
-  update: (data: UpdateBrand) => Promise<any>;
+  create: (data: CreateCategory) => Promise<any>;
+  update: (data: UpdateCategory) => Promise<any>;
   get: (id: string) => Promise<any>;
   getAll: () => Promise<any>;
-  delete: (id: string) => Promise<any>;
+  getAllSub: (id: number) => Promise<any>;
+  deleteCategory: (id: string) => Promise<any>;
 }
 
 export interface Request {
   get: (id: string) => unknown;
   getAll: () => unknown;
-  create: (data: CreateBrand) => unknown;
-  update: (data: UpdateBrand) => unknown;
-  delete: (id: string) => unknown;
+  getAllSub: (id: number) => unknown;
+  create: (data: CreateCategory) => unknown;
+  update: (data: UpdateCategory) => unknown;
+  deleteCategory: (id: string) => unknown;
 }

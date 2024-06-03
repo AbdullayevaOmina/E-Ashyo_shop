@@ -1,4 +1,4 @@
-"use client"; // style
+"use client";
 import { Button, Card, Spinner, TextInput } from "flowbite-react";
 import { DarkModeButton } from "@dark-mode";
 import { schemaSignup } from "@validations";
@@ -11,7 +11,7 @@ import { toast } from "react-toastify";
 
 export default function Signin() {
   const navigate = useNavigate();
-  const { signup } = useRegisterStore();
+  const { signup, signin } = useRegisterStore();
 
   const initialValues: Signup = {
     first_name: "",
@@ -28,8 +28,14 @@ export default function Signin() {
     try {
       const response = await signup(payload);
       if (response.status === 201) {
-        toast.success("You registrated! 🤗");
-        navigate("/");
+        const resSignIn: any = signin({
+          email: payload.email,
+          password: payload.password,
+        });
+        if (resSignIn === 200) {
+          toast.success("You registrated! 🤗");
+          navigate("/main");
+        }
       }
     } catch (error) {
       console.error("Sign-up error:", error);

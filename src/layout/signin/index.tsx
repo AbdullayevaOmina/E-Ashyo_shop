@@ -1,4 +1,4 @@
-"use client"; // style
+"use client";
 import { Button, Card, Spinner, TextInput } from "flowbite-react";
 import { DarkModeButton } from "@dark-mode";
 import { schemaSignin } from "@validations";

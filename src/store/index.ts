@@ -1,2 +1,3 @@
 import useRegisterStore from "./auth";
-export { useRegisterStore };
+import useCategoryStore from "./categries";
+export { useRegisterStore, useCategoryStore };

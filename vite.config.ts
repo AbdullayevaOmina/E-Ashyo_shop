@@ -25,6 +25,7 @@ export default defineConfig({
 
       // ------------------- interface -------------------
       { find: "@global-interface", replacement: "/src/interfaces/global.ts" },
+      { find: "@category-interface", replacement: "/src/interfaces/category.ts" },
       {
         find: "@auth-interface",
         replacement: "/src/interfaces/auth/register.ts",

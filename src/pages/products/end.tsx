@@ -204,7 +204,6 @@ const AddModal: FC = () => {
               Add new product
             </button>
           </form>
-
         </div>
       </div>
     </div>
